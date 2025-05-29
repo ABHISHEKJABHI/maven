@@ -11,18 +11,18 @@ tools
         timeout(time: 10, unit:'MINUTES')
     }
     stages {
-        stage('git clone') {
+        stage('dev-git clone') {
             steps {
                 git branch: 'master', url: 'https://github.com/ABHISHEKJABHI/maven.git'
             }
         }
         
-        stage('mvn') {
+        stage('dev-mvn') {
             steps {
                 sh "mvn clean package"
             }
         }
-        stage('Test') {
+        stage('dev-Test') {
             steps {
                 sh 'mvn test'
             }

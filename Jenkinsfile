@@ -5,7 +5,7 @@ pipeline {
         // PATH = "/opt/apache-maven-3.8.8/bin/:$PATH"
     // }
 tools
-{ mavenn ('maven')
+{ maven ('maven')
      }
      options {
         timeout(time: 10, unit:'MINUTES')

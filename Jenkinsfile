@@ -11,7 +11,7 @@ tools
         timeout(time: 10, unit:'MINUTES')
     }
     stages {
-        stage('git clone') {
+        stage('new-git clone') {
             steps {
                 git branch: 'master', url: 'https://github.com/ABHISHEKJABHI/maven.git'
             }

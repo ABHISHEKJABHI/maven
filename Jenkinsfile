@@ -4,6 +4,8 @@ pipeline {
     environment {
         // Update PATH if needed
         PATH = "/opt/apache-maven-3.8.8/bin/:$PATH"
+         JAVA_HOME = "/usr/lib/jvm/java-21-openjdk-amd64"
+         PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
         
         // Docker and Kubernetes configuration
         DOCKER_REGISTRY = "docker.io/abhishek7483/image-name:tag"  // e.g., docker.io, gcr.io, ecr.amazonaws.com

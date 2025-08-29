@@ -15,7 +15,7 @@ pipeline {
     
     tools {
         maven 'mvn'
-        jdk 'jdk11'  // Specify your JDK version
+        jdk 'openjdk 21 2023-09-19 LTS'  // Specify your JDK version
     }
     
     options {
